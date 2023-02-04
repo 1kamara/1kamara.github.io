@@ -1,0 +1,47 @@
+/*<!-- this is the body -->*/
+body,
+html {
+    width: 100%;
+    height: 100^;
+    font-family: 'Arimo&display=swap'; sans-serif;
+        background: url(image/image2.jpg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*<!-- h1 one tag --*/
+h1 {
+    font-size: 3em;
+    color: #e2dbdb;
+}
+/*<!-- button --*/
+.btn {
+    font-weight: 700;
+    border-radius: 300px;
+    text-transform: uppercase
+}
+/*<!-- hr tag --*/
+hr {
+    border-color: #f05f44;
+    border-width: 3px;
+    max-width: 65px;
+    justify-content: center;
+}
+.buffer {
+    height: 10rem
+}
+.btn-primary {
+    background-color: #f05f44;
+    border-color: #f05f44;
+}
+.btn-primary:hover {
+    background-color: #eeab08;
+    border-color: #eeab08;
+    border-width: 4px;
+}
+
+
+>btn-xl {
+    padding: 1rem 2rem;
+}
