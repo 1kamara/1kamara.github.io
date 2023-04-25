@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Kamara-Calculator</title>
+<style>
+  #main {
+  width: 300px;
+  height: 280px;
+  background-color: black;
+ 
+  }
+   input {width: 23%;
+   height: 50px; font-size: 20px;
+   }
+   #eee{width: 96%; height: 50px; background-color: silver; margin: 6px;}
+</style>
+</head>
+<body>
+<div id="main">
+<form name="f">
+
+
+<input type="text" name="dadd" placeholder="0" id="eee">
+<br>
+<input type="button" value="1" onclick="f.dadd.value+=1">
+<input type="button" value="2" onclick="f.dadd.value+=2">
+<input type="button" value="3" onclick="f.dadd.value+=3">
+<input type="button" value="+" onclick="add()">
+<br>
+<input type="button" value="4" onclick="f.dadd.value+=4">
+<input type="button" value="5" onclick="f.dadd.value+=5">
+<input type="button" value="6" onclick="f.dadd.value+=6">
+<input type="button" value="-" onclick="sub()"> 
+<br>
+<input type="button" value="7" onclick="f.dadd.value+=7">
+<input type="button" value="8" onclick="f.dadd.value+=8">
+<input type="button" value="9" onclick="f.dadd.value+=9">
+<input type="button" value="/" onclick="di()">
+<br>
+<input type="button" value="R" onclick="f.dadd.value=''">
+<input type="button" value="0" onclick="f.dadd.value+=0">
+<input type="button" value="=" onclick="f.dadd.value=eval(f.dadd.value)">
+<input type="button" value="x" onclick="mul()">
+<br>
+
+
+
+</form>
+
+</div>
+
+
+</div>
+<script>
+function add() {
+   var acct=0, b=0;
+   acct= f.dadd.value;
+   b=acct.charAt(acct.length-1);
+  if(b=='+' || b=='-' || b=='/' || b=='*') {
+  f.dadd.value=acct.substring(0,acct.length-1);
+  f.dadd.value+='+';
+  }else {
+f.dadd.value+='+';
+} 
+} 
+function sub() {
+   var acct=0, b=0;
+   acct= f.dadd.value;
+   b=acct.charAt(acct.length-1);
+  if(b=='+' || b=='-' || b=='/' || b=='*') {
+  f.dadd.value=acct.substring(0,acct.length-1);
+  f.dadd.value+='-';
+  }else {
+f.dadd.value+='-';
+} 
+} 
+function di() {
+   var acct=0, b=0;
+   acct= f.dadd.value;
+   b=acct.charAt(acct.length-1);
+  if(b=='+' || b=='-' || b=='/' || b=='*') {
+  f.dadd.value=acct.substring(0,acct.length-1);
+  f.dadd.value+='/';
+  }else {
+f.dadd.value+='/';
+} 
+}
+function mul() {
+   var acct=0, b=0;
+   acct= f.dadd.value;
+   b=acct.charAt(acct.length-1);
+  if(b=='+' || b=='-' || b=='/' || b=='*') {
+  f.dadd.value=acct.substring(0,acct.length-1);
+  f.dadd.value+='*';
+  }else {
+f.dadd.value+='*';
+} 
+} 
+    
+   
+   
+   
+
+</script>
+
+</body>
+</html>
